@@ -1,0 +1,562 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  display: block;
+  padding-left: 70px;
+  padding-right: 47px;
+  position: relative;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  row-gap: 34px;
+}
+
+.navigation-user {
+  flex-wrap: nowrap;
+  max-width: 264px;
+  margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+  min-width: 18px ;
+  min-height: 13px;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link{
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link{
+  background-image: url("../images/favorites.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(3) .navigation-link{
+background-image: url("../images/header-button.svg");
+background-repeat: no-repeat;
+background-position: center;
+height: 37px;
+width: 160px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 19px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* .navigation-link-main::before {
+  content: " ";
+  position: absolute;
+  right: 34px;
+  bottom: 0;
+  height: 68px;
+  border: 2px solid #756257;
+} */
+
+.main-index {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-banner {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  background-color: #82B3D3;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 83px;
+}
+
+.advantages-introduction {
+  height: 282px;
+}
+
+.sedona-city-about {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  padding-top: 63px;
+  padding-left: 290px;
+  padding-right: 290px;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.sedona-city-reasons {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  padding-top: 31px;
+  padding-bottom: 90px;
+  text-align: center;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.advantages {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.advantages-title-main {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-description-main {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  margin-top: 30px;
+  text-transform: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.advantages-item-town {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-column-start: -1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  height: 384px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-item-town::before {
+  content: " ";
+  background-image: url(../images/photo-1.jpg);
+  height: 384px;
+  width: 800px;
+}
+
+.advantages-wrapper {
+  width: 400px;
+}
+
+.advantages-item-town-housing {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-town-food {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  width: 400px;
+  height: 384px;
+  background-color: #FFFFFF;
+}
+
+.advantages-item-town-souvenirs {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-canyon {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-column-start: -1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  height: 384px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-item-canyon::after {
+  content: " ";
+  background-image: url(../images/photo-2.jpg);
+  height: 384px;
+  width: 800px;
+}
+
+.wrapper {
+  width: 400px;
+}
+
+.advantages-item-canyon-area {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-canyon-road {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-canyon-quietly {
+  grid-column-start: 3;
+  grid-row-start: 4;
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services {
+  height: 417px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 91px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.services-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 56px;
+  text-transform: none;
+  text-align: center;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.services-button {
+  display: inline-block;
+  width: 574px;
+  height: 60px;
+  margin-bottom: 93px;
+  padding: 12px 15px;
+  font-size: 20px;
+  line-height: 36px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  background-image: url("../images/background.png");
+  background-color: #83B3D3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-top: 94px;
+  padding-left: 398px;
+  padding-right: 398px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 29px;
+  margin-bottom: 46px;
+  text-transform: none;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.field {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  width: 600px;
+  height: 60px;
+  margin-bottom: 94px;
+  border: none;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 12px 15px;
+  width: 200px;
+  height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  background-color: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.container-form {
+  display: flex;
+}
+
+.page-footer {
+  padding: 45px 0 35px 0;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 400;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  color: #83B3D3;
+  background-color: #FFFFFF;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+  margin-right: 13px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+button-social:hover {
+  background: rgba(104, 162, 202, 0.3);
+}
+
+.footer-contacts {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.number {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.footer-logo {
+  width: 115px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px;
+  background-color: #FFFFFF;
+}
+
+.modal-search {
+  width: 420px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;;
+  border: none;
+  background-image: url(../images/modal-close\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 63px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
