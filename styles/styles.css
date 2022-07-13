@@ -523,6 +523,10 @@ button-social:hover {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+/* .modal-container-close {
+  display: none;
+} */
+
 .modal {
   position: relative;
   margin: auto;
@@ -531,7 +535,7 @@ button-social:hover {
 }
 
 .modal-search {
-  width: 420px;
+  width: 715px;
 }
 
 .modal-close-button {
@@ -552,6 +556,7 @@ button-social:hover {
 .modal-title {
   margin: 0;
   margin-bottom: 63px;
+  margin-left: 68px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -559,4 +564,117 @@ button-social:hover {
   color: #000000;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 288px 230px;
+  column-gap: 56px;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-form-date {
+  grid-column: 1 / -1;
+}
+
+.search-form-departure {
+  grid-column: 1 / -1;
+}
+
+.search-submit {
+  width: 575px;
+  height: 60px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 10px;
+}
+
+.form-label {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-left: 70px;
+  color: #000000;
+  align-items: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.form-label-1 {
+  margin-right: 42px;
+  width: 113px;
+}
+
+.form-label-2 {
+  margin-right: 36px;
+  width: 119px;
+}
+
+.form-label-3 {
+  margin-right: 64px;
+  width: 91px;
+}
+
+.form-label-4 {
+  margin-right: 43px;
+  width: 54px;
+}
+
+.search-info {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 11px;
+  margin-left: 225px;
+  color: #FF5757;
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.search-in {
+  color: #333333;
+  white-space: nowrap;
+}
+
+.search-form .field-group {
+  margin: 0;
+}
+
+.arrival {
+  width: 420px;
+  height: 50px;
+  padding-left: 19px;
+}
+
+.departure {
+  width: 420px;
+  height: 50px;
+  padding-left: 19px;
+}
+
+.adults {
+  width: 133px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.child {
+  width: 133px;
+  height: 50px;
+  margin-bottom: 40px;
+  margin-right: 71px;
+}
+
+.info {
+  display: none;
 }
