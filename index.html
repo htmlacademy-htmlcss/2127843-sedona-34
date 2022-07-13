@@ -172,13 +172,42 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group search-form-date">
+              <label class="form-label form-label-1" for="search-date">Дата заезда:</label>
+              <input class="arrival" type="text" id="search-date" name="search-date" placeholder="27 апреля 2020">
+              <p class="search-info">Мы не можем отправить вас в прошлое.</p>
+            </p>
+            <p class="field-group search-form-departure">
+              <label class="form-label form-label-2" for="search-departure">Дата выезда:</label>
+              <input class="departure" type="text" id="search-departure" name="search-departure" placeholder="1 сентября 2021">
+              <p class="search-info search-in">На эти даты есть свободные номера. Пока есть.</p>
+            </p>
+            <p class="field-group search-form-people">
+              <label class="form-label form-label-3" for="search-people">Взрослые:</label>
+              <input class="adults" type="text" id="search-people" name="search-people" placeholder="2">
+            </p>
+            <p class="field-group search-form-child">
+              <label class="form-label form-label-4" for="search-child">Дети:
+                <button class="info">
+                  <span class="visually-hidden">Укажите количество детей, <br>
+                  которые будут с вами, возраст <br>
+                  которых от 6 до 18 лет. Дети <br>
+                  до 6 лет размещаются <br>
+                  бесплатно.</span>
+                </button>
+              </label>
+              <input class="child" type="text" id="search-child" name="search-child" placeholder="1">
+            </p>
+            <button class="button search-submit" type="submit">Найти</button>
+          </form>
         </section>
       </div>
     </div>
